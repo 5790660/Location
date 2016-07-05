@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.location">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.CurrentActivity"
+            android:label="@string/title_activity_current" />
+        <activity
+            android:name=".activity.AllRecordsActivity"
+            android:label="@string/title_activity_all_records" />
+        <activity
+            android:name=".activity.InquiryActivity"
+            android:label="@string/title_activity_inquiry" />
+        <activity
+            android:name=".activity.AddActivity"
+            android:label="@string/title_activity_add" />
+        <activity
+            android:name=".activity.ModifyActivity"
+            android:label="@string/title_activity_modify" />
+        <activity
+            android:name=".activity.SingleListActivity"
+            android:label="@string/title_activity_single_list" />
+        <activity
+            android:name=".activity.EventsListActivity"
+            android:label="@string/title_activity_events_list" />
+        <activity
+            android:name=".activity.ModifyIndexActivity"
+            android:label="@string/title_activity_modify_index" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:label="@string/title_activity_settings"></activity>
+    </application>
+
+</manifest>
